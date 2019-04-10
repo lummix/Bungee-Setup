@@ -22,7 +22,7 @@ case "$1" in
  start)
   if ( running )
   then
-echo "[MonServeur] Le serveur "[$NAME]" est deja ouvert"
+echo "[MonServeur] Le serveur "[$NAME]" est déjà ouvert"
   else
 echo "[MonServeur] Demarrage du serveur: [$NAME]"
    screen -dmS $SCREEN $COMMAND
@@ -48,7 +48,7 @@ echo "Not running"
 screen -S $SCREEN -p 0 -X stuff `printf "stop\r"`
    echo "[MonServeur] Arret du serveur: [$NAME]"
   else
-echo "[MonServeur] Le serveur "[$NAME]" est pas demarrer"
+echo "[MonServeur] Le serveur "[$NAME]" n'est pas demarré"
   fi
  ;;
 *)
